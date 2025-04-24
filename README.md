@@ -1,6 +1,6 @@
 # Run VHDL and GTKWave in a Docker container
 
-Prerequesites:
+Prerequisites:
 - install Docker
 - install xquartz and allow network connections
 - add `export DISPLAY=:0` to your ~/.bashrc
