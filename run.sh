@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MOUNT_SRC=${1:-$PWD}          # ${var:-default}
-DISP=$( [[ "$(uname)" == "Linux" ]] && ${DISPLAY} || echo "host.docker.internal:0" )
+DISP=$( [[ "$(uname)" == "Linux" ]] && echo "$DISPLAY" || echo "host.docker.internal:0" )
 
 echo "Mounting host path: $MOUNT_SRC -> /work"
 
