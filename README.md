@@ -7,6 +7,5 @@ Prerequisites:
 
 To run:
 - run xquartz
-- run `xhost +127.0.0.1`
 - on linux you also need to run `xhost +local:docker`
 - `./run.sh <your project directory>` (local build is not necessary)

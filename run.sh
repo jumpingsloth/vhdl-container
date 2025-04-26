@@ -3,6 +3,9 @@
 MOUNT_SRC=${1:-$PWD}          # ${var:-default}
 DISP=$( [[ "$(uname)" == "Linux" ]] && echo "$DISPLAY" || echo "host.docker.internal:0" )
 
+echo "configuring xhost"
+xhost +127.0.0.1
+
 echo "Mounting host path: $MOUNT_SRC -> /work"
 
 docker run -it --rm \
